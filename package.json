@@ -1,0 +1,29 @@
+{
+  "name": "invoice-radar",
+  "version": "1.0.0",
+  "description": "Vendor invoice & contract renewal tracker with price-hike alerts for SMBs",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "seed": "node src/seed.js",
+    "test": "node src/test.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "better-sqlite3": "^11.1.2",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.14",
+    "dotenv": "^16.4.5",
+    "uuid": "^10.0.0",
+    "date-fns": "^3.6.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
